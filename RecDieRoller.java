@@ -30,6 +30,7 @@ public class RecDieRoller {
 		int rolls = 0; //int variable to track number of rolls for each "2" rolled.
 		for(int i =0; i<1000;i++) {
 			int result = die.nextInt(6) + 1; //generates random number 0 through 5 then adds 1 on the output.
+			System.out.println(result); //prints the current roll
 			if(result==2) {
 				twos++; //increments twos counter by 1
 				System.out.println("Number of rolls to get Two #"+ twos + ": " + rolls); //prints the rolls counter for the current "2" rolled.
